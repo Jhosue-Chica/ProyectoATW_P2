@@ -1,0 +1,187 @@
+/*Platillos Principales */
+
+/* Resto de los estilos CSS del contenido de la página */
+
+h1 {
+  text-align: center;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.busqueda {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+
+.busqueda input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.busqueda button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.recetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.receta {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f9f9f9;
+  margin: 10px;
+  /* Añade un margen para separar las recetas */
+  position: relative;
+}
+
+.receta img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.receta h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.receta p {
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.receta button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.detalle-receta {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.detalle-receta img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.detalle-receta h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.detalle-receta h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.detalle-receta ul,
+.detalle-receta ol {
+  text-align: left;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.comentarios {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: left;
+  background-color: #f9f9f9;
+}
+
+.comentarios h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.compartir {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.compartir button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.receta {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+}
+
+.boton-favorito {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.estrella-favorito {
+  width: 20px;
+  height: 20px;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/2441/2441712.png');
+  /* Reemplaza con la ruta correcta */
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: 1px;
+}
