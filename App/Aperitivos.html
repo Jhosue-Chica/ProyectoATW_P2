@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyecto U1 Seccion Aperitivos</title>
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <!--Redes sociales -->
+    <div class="container-fluid" style="height: 20px;">
+      <div class="row">
+
+        <div class="col-md-9" style="width: 1000;"></div>
+        <div class="col-md-3">
+          <div class="row img-header">
+
+            <div class="col-4">
+              <a href="https://www.facebook.com/nataly.m.pacheco/?locale=es_LA">
+                <img src="assets/img/Logos/14.png" alt="facebook">
+              </a>
+            </div>
+
+            <div class="col-4">
+              <a href="https://www.youtube.com/@nattypacheco133">
+                <img src="assets/img/Logos/15.png" alt="Icono 2">
+              </a>
+            </div>
+
+            <div class="col-4">
+              <a href="https://www.instagram.com/pacheco.nataly/">
+                <img src="assets/img/Logos/16.png" alt="instagram">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--Menú Principal -->
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <!-- Logotipo -->
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/Logos/8.png" alt="Logo" height="70" class="d-inline-block align-top">
+    </a>
+
+    <!-- Botón para dispositivos móviles -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Enlaces del menú -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="Inicio.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Recetas.html">Recetas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="linea-personalizada"></div>
+  <main>
+    <!-- Recetas Platillos Principales -->
+
+    <h2 class="razon" style="border-bottom: 10px;">Aperitivos</h2>
+
+    <div class="busqueda">
+      <input type="text" placeholder="Buscar por nombre, ingredientes o categorías" id="buscarInput">
+      <button type="submit">Buscar</button>
+    </div>
+    <!-- Menu recetas -->
+    <!-- Menu recetas -->
+    <div class="container">
+      <div class="row">
+        <div class="receta" id="receta6">
+          <img src="assets/img/Platillos Principales/Tacos de Carnitas con Salsa Verde.jpg"
+            alt="Imagen receta difícil 3">
+          <h2>Tacos de Carnitas con Salsa Verde</h2>
+          <p>Tiempo de Preparación: 3 horas (Cocción lenta)</p>
+          <p>Dificultad: Media</p>
+          <p>Porciones: 8</p>
+          <button onclick="mostrarDetalleReceta('Tacos de Carnitas con Salsa Verde')">Ver Receta</button>
+          <button class="boton-favorito" onclick="agregarFavorito(this, 'estrella6')">Agregar a favoritos</button>
+          <div class="estrella-favorito" id="estrella6"></div>
+        </div>
+
+        <div class="receta" id="receta9">
+          <img src="assets/img/Platillos Principales/Ensalada César con Pollo a la Parrilla.jpg"
+            alt="Imagen receta de dificultad media 1">
+          <h2>Ensalada César con Pollo a la Parrilla</h2>
+          <p>Tiempo de Preparación: 30 minutos</p>
+          <p>Dificultad: Fácil</p>
+          <p>Porciones: 2</p>
+          <button onclick="mostrarDetalleReceta('Ensalada César con Pollo a la Parrilla')">Ver Receta</button>
+          <button class="boton-favorito" onclick="agregarFavorito(this, 'estrella9')">Agregar a favoritos</button>
+          <div class="estrella-favorito" id="estrella9"></div>
+        </div>
+
+        <div class="receta" id="receta10">
+          <img src="assets/img/Platillos Principales/Hamburguesas de Pavo con Aguacate.jpg"
+            alt="Imagen receta de dificultad media 2">
+          <h2>Hamburguesas de Pavo con Aguacate</h2>
+          <p>Tiempo de Preparación: 25 minutos</p>
+          <p>Dificultad: Fácil</p>
+          <p>Porciones: 4</p>
+          <button onclick="mostrarDetalleReceta('Hamburguesas de Pavo con Aguacate')">Ver Receta</button>
+          <button class="boton-favorito" onclick="agregarFavorito(this, 'estrella10')">Agregar a favoritos</button>
+          <div class="estrella-favorito" id="estrella10"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Detalle Receta -->
+    <div class="detalle-receta">
+      <h2>Nombre de la Receta</h2>
+      <img src="ruta_de_la_imagen" alt="Imagen de la receta">
+      <p>Tiempo de Preparación: X minutos</p>
+      <p>Dificultad: Fácil</p>
+      <p>Porciones: X</p>
+      <h3>Ingredientes</h3>
+      <ul>
+        <li>Ingrediente 1</li>
+        <li>Ingrediente 2</li>
+        <!-- Repetir el código anterior para cada ingrediente -->
+      </ul>
+      <h3>Pasos de Preparación</h3>
+      <ol>
+        <li>Paso 1</li>
+        <li>Paso 2</li>
+        <!-- Repetir el código anterior para cada paso -->
+      </ol>
+    </div>
+
+
+    <!-- Comentarios -->
+    <div class="comentarios">
+      <h2>Comentarios</h2>
+      <div class="comentarios-lista" id="comentarios-lista">
+        <!-- Aquí se mostrarían los comentarios existentes de los usuarios, si los hay -->
+      </div>
+      <div class="agregar-comentario">
+        <h3>Agregar comentario</h3>
+        <textarea id="nuevo-comentario" placeholder="Escribe tu comentario aquí"></textarea>
+        <button onclick="agregarComentario()">Agregar</button>
+      </div>
+    </div>
+
+    <div class="compartir">
+      <h2>Compartir Receta</h2>
+      <button><a href="https://www.facebook.com/?locale=es_LA" target="_blank" style="color: white;">Compartir en
+          Facebook</a></button>
+      <button><a href="https://twitter.com/?lang=es" target="_blank" style="color: white;">Compartir en
+          Twitter</a></button>
+      <button><a href="https://www.google.com/intl/es/gmail/about/" target="_blank" style="color: white;">Enviar por
+          Correo Electrónico</a></button>
+    </div>
+  </main>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row d-flex align-items-center ">
+        <div class="col-md-4">
+          <h5 class="footer-title">Acerca de la compañía</h5>
+          <img src="assets/img/Logos/9.png" class="img-fluid img-footer" alt="Logo de página">
+        </div>
+        <div class="col-md-4">
+          <h5 class="footer-title ">Dirección</h5>
+          <address>
+            Santo Domingo de los Tsachilas - Ecuador
+          </address>
+        </div>
+        <div class="col-md-4">
+          <h5 class="footer-title">Contacto</h5>
+          <address>
+            0986439931
+          </address>
+        </div>
+      </div>
+      <div class="row d-flex align-items-center">
+        <div class="col-md-12 copyrigh-col">
+          <h5 class="copyrigh-title ">Copyright © 2023 KITCHEN | Reservados todos los derechos.</h5>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const recetas = [
+
+      {
+        nombre: "Tacos de Carnitas con Salsa Verde",
+        imagen: "assets/img/Platillos Principales/Tacos de Carnitas con Salsa Verde.jpg",
+        tiempo: "3 horas (Cocción lenta)",
+        dificultad: "Media",
+        porciones: "8",
+        ingredientes: [
+          "1 kg de carne de cerdo (paleta o pierna)",
+          "1 cucharada de comino",
+          "1 cucharada de orégano",
+          "1 cucharadita de pimentón",
+          "Sal y pimienta al gusto",
+          "1 cebolla, cortada en trozos grandes",
+          "4 dientes de ajo, picados",
+          "Salsa verde y cebolla picada para acompañar"
+        ],
+        pasos: [
+          "Sazona la carne con comino, orégano, pimentón, sal y pimienta.",
+          "Coloca la carne en una olla de cocción lenta, añade la cebolla y el ajo, y cocina a fuego lento durante 3 horas.",
+          "Desmenuza la carne y dórala en una sartén.",
+          "Sirve las carnitas en tortillas de maíz, con salsa verde y cebolla picada."
+        ]
+      },
+      {
+        nombre: "Ensalada César con Pollo a la Parrilla",
+        imagen: "assets/img/Platillos Principales/Ensalada César con Pollo a la Parrilla.jpg",
+        tiempo: "30 minutos",
+        dificultad: "Fácil",
+        porciones: "2",
+        ingredientes: [
+          "2 pechugas de pollo",
+          "Lechuga romana",
+          "Pan tostado en cubos",
+          "Queso parmesano rallado",
+          "Aderezo César"
+        ],
+        pasos: [
+          "Sazona las pechugas de pollo y ásalas en la parrilla hasta que estén cocidas.",
+          "Corta la lechuga y mézclala con los cubos de pan tostado.",
+          "Agrega el pollo cortado en tiras y espolvorea queso parmesano.",
+          "Sirve con aderezo César."
+        ]
+      },
+
+      {
+        nombre: "Hamburguesas de Pavo con Aguacate",
+        imagen: "assets/img/Platillos Principales/Hamburguesas de Pavo con Aguacate.jpg",
+        tiempo: "25 minutos",
+        dificultad: "Fácil",
+        porciones: "4",
+        ingredientes: [
+          "500g de carne molida de pavo",
+          "1 huevo",
+          "1/2 taza de pan rallado",
+          "1 cucharadita de ajo en polvo",
+          "Sal y pimienta al gusto",
+          "4 bollos de hamburguesa integrales",
+          "1 aguacate maduro, en rodajas",
+          "Hojas de lechuga",
+          "Rodajas de tomate"
+        ],
+        pasos: [
+          "En un tazón, mezcla la carne de pavo, el huevo, el pan rallado, el ajo en polvo, sal y pimienta. Forma hamburguesas.",
+          "Cocina las hamburguesas en una parrilla caliente durante 5-6 minutos por cada lado.",
+          "Tuesta los bollos en la parrilla y coloca las hamburguesas sobre ellos.",
+          "Decora con rodajas de aguacate, hojas de lechuga y tomate."
+        ]
+      }
+
+    ];
+    const inputBusqueda = document.getElementById('buscarInput');
+    const recetasContainer = document.getElementById('recetasContainer');
+
+    inputBusqueda.addEventListener('input', () => {
+      const terminoBusqueda = inputBusqueda.value.toLowerCase();
+      const recetasFiltradas = recetas.filter(receta => receta.nombre.toLowerCase().includes(terminoBusqueda));
+
+      mostrarRecetas(recetasFiltradas);
+    });
+
+    function mostrarRecetas(recetasMostradas) {
+      recetasContainer.innerHTML = '';
+
+      if (recetasMostradas.length === 0) {
+        recetasContainer.innerHTML = '<p>No se encontraron recetas.</p>';
+        return;
+      }
+
+      recetasMostradas.forEach(receta => {
+        const recetaElement = document.createElement('div');
+        recetaElement.classList.add('receta');
+        // Generar un identificador único para la estrella basado en el nombre de la receta
+        const estrellaId = `estrella_${receta.nombre.replace(/\s+/g, '_')}`;
+
+        recetaElement.innerHTML = `
+              <img src="${receta.imagen}" alt="Imagen de la receta">
+              <h2>${receta.nombre}</h2>
+              <p>Tiempo de Preparación: ${receta.tiempo}</p>
+              <p>Dificultad: ${receta.dificultad}</p>
+              <p>Porciones: ${receta.porciones}</p>
+              <button onclick="mostrarDetalleReceta('${receta.nombre}')">Ver Receta</button>
+              <button class="boton-favorito" onclick="agregarFavorito(this, '${estrellaId}')">Agregar a favoritos</button>
+              <div class="estrella-favorito" id="${estrellaId}"></div>
+            `;
+
+        recetasContainer.appendChild(recetaElement);
+      });
+    }
+
+    function mostrarDetalleReceta(nombreReceta) {
+      const detalleReceta = document.querySelector('.detalle-receta');
+      const receta = recetas.find(receta => receta.nombre === nombreReceta);
+
+
+      if (receta) {
+
+        detalleReceta.innerHTML = `
+              <h2>${receta.nombre}</h2>
+              <img src="${receta.imagen}" alt="Imagen de la receta">
+              <p>Tiempo de Preparación: ${receta.tiempo}</p>
+              <p>Dificultad: ${receta.dificultad}</p>
+              <p>Porciones: ${receta.porciones}</p>
+              <h3>Ingredientes</h3>
+              <ul>
+                ${receta.ingredientes.map(ingrediente => `<li>${ingrediente}</li>`).join('')}
+              </ul>
+              <h3>Pasos de Preparación</h3>
+              <ol>
+                ${receta.pasos.map(paso => `<li>${paso}</li>`).join('')}
+              </ol>
+    
+              
+            `;
+
+        detalleReceta.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function agregarComentario() {
+      const nuevoComentario = document.getElementById("nuevo-comentario").value;
+      if (nuevoComentario.trim() !== "") {
+        const comentariosLista = document.getElementById("comentarios-lista");
+        const comentarioElemento = document.createElement("div");
+        comentarioElemento.className = "comentario";
+        comentarioElemento.innerText = nuevoComentario;
+        comentariosLista.appendChild(comentarioElemento);
+        document.getElementById("nuevo-comentario").value = "";
+      }
+    }
+
+    function agregarFavorito(boton, estrellaId) {
+      var estrella = document.getElementById(estrellaId);
+      estrella.style.display = "block";
+    }
+
+  </script>
+</body>
+
+</html>
