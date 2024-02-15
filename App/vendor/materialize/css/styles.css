@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+h1 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+h1.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.btn {
+    transition: background-color 0.3s;
+    background-color: #3E180B;
+    color: #ffffff; /* Color del texto, ajusta según necesites */
+    padding: 10px 20px; /* Ajusta según necesites */
+    text-decoration: none; /* Para quitar subrayado si es un enlace */
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #8D4223; 
+}
+
+
+#usuariosTable {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#usuariosTable th,
+#usuariosTable td {
+    padding: 10px;
+    text-align: center;
+}
+
+#usuariosTable th {
+    background-color: #3E180B; 
+}
+
+#usuariosTable img {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+}
+
+.bordered {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.bordered th, .bordered td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.bordered th {
+    background-color: #3E180B; 
+    color: white;
+}
+
+.bordered {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.bordered.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.btn.waves-effect.waves-light.blue {
+    background-color: #3E180B; 
+}
+
+.btn:hover {
+    background-color: #812f14; 
+}
